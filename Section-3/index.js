@@ -1,58 +1,37 @@
-// //simplest js function
-
-// function myFunction(){}
+// const myFunction = function(){};
 
 // console.log(myFunction());
 
-// myFunction()
+// setTimeout(function(){
+//   console.log("Delayed Message");
+// }, 2000)
+// let a = 1
+// setInterval(() => {
+//   console.log(a + " second")
+//   a += 1
+// }, 1000);
 
-// const functionResult = myFunction();
-// // console.log(functionResult)
 
-// function myFunction(a,b){
-//   console.log(a,b)
+let i = 1;
+
+const myInterval = setInterval(function(){
+  console.log("Here is message number " + i)
+  i += 1;
+},1000);
+
+setTimeout(function(){
+  clearInterval(myInterval);
+}, 10000);
+
+// function myInterval(){
+//   setInterval(() => {
+//   console.log("Here is message number " + i)
+//   i += 1
+// }, 1000);
+
 // }
 
-// // console.log(myFunction(3,2))
+// setTimeout(clearInterval(), 6000);
 
-// function myFunction1(a, b){
-//   console.log(a, b)
-// }
+// myInterval();
 
-// function myFunction2(a, b){
-//   console.log(a, b)
-// }
-
-// myFunction1(2, 3)
-// myFunction1(5, 7)
-
-// const a = true
-// const b = null
-
-// console.log(a, b)
-
-// myFunction1(a, b)
-
-// function mult(a, b, c){
-//   const multResult = a * b * c
-//   console.log(multResult);
-// }
-
-// mult(2,3,5)
-
-// function concatenateStrings(a, b){
-//   return a + " " + b
-// }
-
-// console.log(concatenateStrings("Hello", "World"));
-// function innerFunction(c){
-//   return c * c;
-// }
-
-// function outerFunction(a, b){
-//   const sum = a + b;
-//   const result = innerFunction(sum);
-//   console.log(result);
-// }
-
-// outerFunction(2,3)
