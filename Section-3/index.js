@@ -121,41 +121,76 @@
 //     }}
 
 //challenge 2
-const MIN = 1000;
-const MAX = 9999;
-const myNumbers = [
-    2355,
-    7235,
-    8135,
-    1762,
-    2361,
-    8351
-];
+// const MIN = 1000;
+// const MAX = 9999;
+// const myNumbers = [
+//     2355,
+//     7235,
+//     8135,
+//     1762,
+//     2361,
+//     8351
+// ];
 
-let newRandomNumber;
+// let newRandomNumber;
 
-let l = myNumbers.length
+// let l = myNumbers.length
 
-function getRandomInt(min, max){
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+// function getRandomInt(min, max){
+//     min = Math.ceil(min);
+//     max = Math.floor(max);
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// function isNotUnique(newRandomNum){
+//     for (let number of myNumbers){
+//         if (newRandomNum === number){
+//             return true;
+//         }
+//     }
+// }
+
+
+// do { 
+//     newRandomNumber = getRandomInt(MIN,MAX);
+//     console.log(newRandomNumber);
+
+// } while (isNotUnique(newRandomNumber));
+
+// myNumbers.push(newRandomNumber);
+// console.log(myNumbers)
+
+// const myObject = {
+//     name: "Mike",
+//     age: 30,
+//     city: "London"
+// };
+
+// Object.prototype.country = "England";
+
+// for (let key in myObject){
+//     if(myObject.hasOwnProperty(key)){
+//         console.log(myObject[key]);
+//     }
+// }
+
+// challenge 4
+
+// function emptyArray(inputArray){
+//     if (inputArray.length > 0){
+//         return "Array is not empty";
+//     } else {
+//         return "Array is empty";
+//     }
+// }
+
+
+
+function emptyArray(inputArray){
+    return inputArray.length > 0
+        ? "Array is not empty"
+        : "Array is empty";
 }
 
-function isNotUnique(newRandomNum){
-    for (let number of myNumbers){
-        if (newRandomNum === number){
-            return true;
-        }
-    }
-}
-
-
-do { 
-    newRandomNumber = getRandomInt(MIN,MAX);
-    console.log(newRandomNumber);
-
-} while (isNotUnique(newRandomNumber));
-
-myNumbers.push(newRandomNumber);
-console.log(myNumbers)
+console.log(emptyArray([1,3]))
+console.log(emptyArray([]))
