@@ -1,80 +1,58 @@
-/* let myObject;
+// //simplest js function
 
-myObject = {
-  a: 10,
-  b: "abc"
-}
+// function myFunction(){}
 
-console.log(myObject)
+// console.log(myFunction());
 
-myObject.a = 15;
+// myFunction()
 
-console.log(myObject)
+// const functionResult = myFunction();
+// // console.log(functionResult)
 
-myObject.c = true
+// function myFunction(a,b){
+//   console.log(a,b)
+// }
 
-console.log(myObject)
+// // console.log(myFunction(3,2))
 
-delete myObject.b
+// function myFunction1(a, b){
+//   console.log(a, b)
+// }
 
-console.log(myObject)
+// function myFunction2(a, b){
+//   console.log(a, b)
+// }
 
-console.log(myObject.a) */
+// myFunction1(2, 3)
+// myFunction1(5, 7)
 
-// var myPost = {}
+// const a = true
+// const b = null
 
-// myPost.title = "Object is reference type"
-// myPost.postLikes = 0
-// myPost.shared = false
+// console.log(a, b)
 
-// myPost.postLikes += 1
+// myFunction1(a, b)
 
-// delete myPost.shared
+// function mult(a, b, c){
+//   const multResult = a * b * c
+//   console.log(multResult);
+// }
 
-// console.log(myPost)
+// mult(2,3,5)
 
-// const myObject = {
-//   a: -10
-// };
+// function concatenateStrings(a, b){
+//   return a + " " + b
+// }
 
-// var copyOfMyObject = myObject;
+// console.log(concatenateStrings("Hello", "World"));
+// function innerFunction(c){
+//   return c * c;
+// }
 
-// copyOfMyObject.b = false;
+// function outerFunction(a, b){
+//   const sum = a + b;
+//   const result = innerFunction(sum);
+//   console.log(result);
+// }
 
-// console.log(myObject);
-// console.log(copyOfMyObject);
-
-// let myObject = {
-//   a: true,
-//   b: null,
-//   c: 25
-// };
-
-// console.log(myObject["a"]);
-// console.log(myObject["b"]);
-
-// const propertyName = "c";
-
-// console.log(myObject[propertyName]);
-
-const myObject = {
-  a: 3,
-  b: true
-};
-
-// myObject.newPropertyWithUndefinedValue = undefined //use null intead
-
-// console.log(myObject.newPropertyWithUndefinedValue)
-
-var objectWithNestedObject = {
-
-};
-
-objectWithNestedObject.nestedObject = {
-
-};
-
-objectWithNestedObject.nestedObject.a = null
-objectWithNestedObject.nestedObject["b"] = true
-
-console.log(objectWithNestedObject);
+// outerFunction(2,3)
