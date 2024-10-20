@@ -1,37 +1,23 @@
-// const myFunction = function(){};
+// let myVariable1 = "3", myVariable2 = "6"
 
-// console.log(myFunction());
+// console.log(+myVariable1 <= +myVariable2)
 
-// setTimeout(function(){
-//   console.log("Delayed Message");
-// }, 2000)
-// let a = 1
-// setInterval(() => {
-//   console.log(a + " second")
-//   a += 1
-// }, 1000);
+// let myNumber1 = 10, myNumber2 = 3
 
+// console.log(10 % 3)
 
-let i = 1;
+let a = 10
 
-const myInterval = setInterval(function(){
-  console.log("Here is message number " + i)
-  i += 1;
-},1000);
+a = a + 1
+a += 1
 
-setTimeout(function(){
-  clearInterval(myInterval);
-}, 10000);
+a = a * 2
+a *= 2
 
-// function myInterval(){
-//   setInterval(() => {
-//   console.log("Here is message number " + i)
-//   i += 1
-// }, 1000);
+a = a - 5
+a -= 5
 
-// }
+a = a / 2
+a /= 2
 
-// setTimeout(clearInterval(), 6000);
-
-// myInterval();
-
+console.log(a)
