@@ -1,23 +1,30 @@
-// let myVariable1 = "3", myVariable2 = "6"
+// const b = 2;
+// let d = 15;
 
-// console.log(+myVariable1 <= +myVariable2)
+// function myFn1(a){
+//   let b;
+//   let d = 10;
+//   myFn2(b);
+// }
 
-// let myNumber1 = 10, myNumber2 = 3
+// function myFn2(a){
+//   let c = 5
+//   console.log(a, b, c, d)
+// }
 
-// console.log(10 % 3)
+// myFn1()
 
-let a = 10
+// "use strict";
 
-a = a + 1
-a += 1
+// function myFunction(){
+//   let a = 2;
+//   return a;
+// }
 
-a = a * 2
-a *= 2
+// myFunction();
 
-a = a - 5
-a -= 5
+setTimeout(function myFn(){
+  console.log("Hello from myFn")
+}, 2000);
 
-a = a / 2
-a /= 2
-
-console.log(a)
+myFn()
