@@ -1,30 +1,45 @@
-// const b = 2;
-// let d = 15;
+// const myArray = [1,2,3];
+// const myArray2 = new Array(1,2,3);
 
-// function myFn1(a){
-//   let b;
-//   let d = 10;
-//   myFn2(b);
-// }
+// console.log(myArray === myArray2);
+// console.log(myArray == myArray2)
 
-// function myFn2(a){
-//   let c = 5
-//   console.log(a, b, c, d)
-// }
+// const myArray = [true, null];
+// myArray.unshift("Hello");
+// myArray.unshift(100);
 
-// myFn1()
 
-// "use strict";
+// console.log(myArray);
 
-// function myFunction(){
-//   let a = 2;
-//   return a;
-// }
+// const myArray = [1,2];
 
-// myFunction();
+// myArray[10] = "abc";
 
-setTimeout(function myFn(){
-  console.log("Hello from myFn")
-}, 2000);
+// console.log(myArray);
+// console.log(myArray.length);
 
-myFn()
+const car1 = {
+    carBrand: "Mercedes",
+    price: 20000
+}
+
+const car2 = {
+    carBrand: "Honda",
+    price: 15000
+}
+
+const car3 = {
+    carBrand: "Ford",
+    price: 18000
+}
+
+const car4 = {
+    carBrand: "Jaguar",
+    price: 40000
+}
+
+const arrayOfCars = [car1, car2, car3];
+
+arrayOfCars.push(car4);
+
+console.log(arrayOfCars);
